@@ -1,0 +1,17 @@
+{
+    "name": "duulk/pract",
+    "authors": [
+        {
+            "name": "Test",
+            "email": "test@hotmail.com"
+        }
+    ],
+    "require": {
+        "composer/semver": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "photos\\": "src/"
+        }
+    }
+}

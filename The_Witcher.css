@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Balsamiq+Sans&family=Oswald&family=Roboto+Mono:wght@300&display=swap');
+body {
+    background-image: url("a292c58c682ebd699dd94bc8b9576c52.jpeg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+a:hover {
+    background-color: #015965;
+    color: #03899C;
+}
+
+a {
+    display: inline-block;
+    background: #03899C;
+    color: #015965;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    border-radius: 3px;
+    font-family: "Roboto Mono", monospace;
+    transition: transform 1s ease, color 1s ease;
+    border: #240672 2px solid;
+}
+
+#D {
+    background-color: #03899C;
+    border: #240672 5px solid;
+    display: grid;
+    padding: 10%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px;
+    font-size: 2rem;
+    font-family: 'Amatic SC';
+    font-style: normal;
+}
+
+#D img {
+    width:  16em;
+    height:  16em;
+    border: 5px #240672 solid;
+    transition: transform 1.5s ease, background-color 1.5s ease, border 1.5s ease;
+}
+
+#D img:hover {
+    transform: scale(0.8);
+    background-color: #015965;
+    border: 5px #240672 solid;
+}
+
+.photo {
+    text-align: center;
+    position: relative; 
+    overflow: hidden;
+}
+
+#Pain, form {
+    position: fixed;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+}
+
+#Pain.open form {
+    display: flex;
+}
+
+#Pain div form{
+    width: 80%;
+    border: #240672 5px solid;
+    background: #03899C;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+#Pain input form {
+    padding: .5rem;
+    font-family: 'Amatic SC';
+    font-style: normal;
+    display: block;
+    margin-bottom: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#Pain input.error form {
+    border-color: #015965;
+}
+
+#Pain button form {
+    padding: .5rem;
+}
+
+.Tango {
+    display: flex;
+    align-items: center;
+    background-color: #015965;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    height: 4rem;
+}
+
+.icon {
+    display: none;
+    width: 2rem;
+    height: 2rem;
+    background: #03899C;
+    padding: .5rem;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+.icon img {
+    width: 100%;
+}
+
+#TangoP {
+    text-align: center;
+    grid-column: span 2;
+    display: none;
+    width:  16em;
+    height:  16em;
+}
+
+h1 {
+    padding-top: 10%;
+    max-width: 10%;
+    max-height: 10%;
+}
+.enlarged-photo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.enlarged-photo img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 5px solid #fff;
+    border-radius: 10px;
+}
+.form{
+    width: 50%;
+    margin: auto;
+    margin: 3rem auto;
+}
+.form input{
+    padding: .5rem;
+    font-family: 'Amatic SC';
+    font-style: normal;
+    display: block;
+    margin-bottom: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+.form .error{
+    color: #b7a8dd;
+    font-weight: bold;
+}
+.form .success{
+    color: #240672;
+    font-weight: bold;
+}
